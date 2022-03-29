@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <h1>Formulaire DWWM</h1>
+        <form method="" action="">
+                <div class="container">
+                    <div class="labelrow">
+                        <label for="nom">Nom </label>
+                    </div>
+                    <div>
+                        <input type="text" id="nom" placeholder="Entrez votre nom">
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="labelrow">
+                        <label for="mail">Email</label>
+                    </div>
+                    <div>
+                        <input type="email" id="mail" placeholder="Entrez votre email">
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="labelrow">
+                        <label for="num">Indiquez votrre satisfaction <br> au cours de 1 à 10</label>
+                    </div>
+                    <div>
+                        <input type="number" maxlength="10" id="num" placeholder="numéro de 1 à 10">
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="labelrow">
+                        <label for="caoch" class="labelrow row">Qui est votre caoch?</label>
+                    </div>
+                    <div>
+                        <select name="liste" id="caoch">
+                            <option value="">Birante</option>
+                            <option value="">Malick</option>
+                            <option value="">Mamadou</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="labelrow">
+                        <label for="moment">A quel moment avez-vous<br> cours ?</label>
+                    </div>
+                    <div>
+                        <blockquote>
+                            <input type="radio" name="temps" id="matin">
+                            <label for="matin">Matin</label><br>
+                            <input type="radio" name="temps" id="aprem">
+                            <label for="aprem">Après-midi</label><br>
+                            <input type="radio" name="temps" id="soir">
+                            <label for="soir">Soir</label>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="labelrow">
+                        <label for="moment">Quels outils avez-vous<br> rencontrés jusque là? <br> (Selectionnez tout ce qui<br> s'applique)</label>
+                    </div>
+                    <div>
+                        <blockquote>
+                            <input type="checkbox" name="outils" id="html">
+                            <label for="html">HTML</label><br>
+                            <input type="checkbox" name="outils" id="css">
+                            <label for="css">CSS</label><br>
+                            <input type="checkbox" name="outils" id="js">
+                            <label for="js">Javascript</label><br>
+                            <input type="checkbox" name="outils" id="editeur">
+                            <label for="editeur">Editeur de texte</label><br>
+                            <input type="checkbox" name="outils" id="terminal">
+                            <label for="terminal">Ligne de commande</label>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="labelrow">
+                        <label for="description">Décrivez votre expérience<br> jusque là</label>
+                    </div>
+                    <div>
+                        <textarea id="description" cols="30" rows="4" placeholder="Décrivez votre expérience ici..."></textarea><br>
+                    </div>
+                </div>
+                <div class="button">
+                    <button>Envoyez</button>
+                </div>
+        </form>
+</body>
+</html>
